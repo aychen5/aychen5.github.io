@@ -3,17 +3,40 @@
 <header class="page-header">
 </header>
 
-<ul class="terms-tags">
+<ul class="terms-tags" id="tag-cloud">
     {{- $type := .Type }}
     {{- range $key, $value := .Data.Terms.Alphabetical }}
     {{- $name := .Name }}
     {{- $count := .Count }}
     {{- with site.GetPage (printf "/%s/%s" $type $name) }}
     <li>
-        <a href="{{ .Permalink }}">{{ .Name }} <sup><strong><sup>{{ $count }}</sup></strong></sup> </a>
+        <a href="{{ .Permalink }}" data-count="{{ $count }}">{{ .Name }} <sup><strong><sup>{{ $count }}</sup></strong></sup> </a>
     </li>
     {{- end }}
     {{- end }}
 </ul>
+
+<script>
+(function() {
+    const tags = document.querySelectorAll('#tag-cloud a[data-count]');
+    if (tags.length === 0) return;
+    
+    const counts = Array.from(tags).map(tag => parseInt(tag.getAttribute('data-count')));
+    const minCount = Math.min(...counts);
+    const maxCount = Math.max(...counts);
+    const range = maxCount - minCount || 1;
+    
+    const minSize = 0.9;
+    const maxSize = 2.0;
+    const sizeRange = maxSize - minSize;
+    
+    tags.forEach(tag => {
+        const count = parseInt(tag.getAttribute('data-count'));
+        const weight = (count - minCount) / range;
+        const fontSize = minSize + (weight * sizeRange);
+        tag.style.fontSize = fontSize.toFixed(2) + 'em';
+    });
+})();
+</script>
 
 {{- end }}

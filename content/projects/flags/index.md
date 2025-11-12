@@ -1,7 +1,7 @@
 ---
 title: "Who flies the flag? [WIP]" 
 date: 2025-09-13
-tags: ["computer vision","object detection","street view imagery", "banal nationalism"]
+tags: ["computer vision","object detection","street view imagery", "maps", "banal nationalism"]
 author: ["Annie Chen"]
 description: "An exploration of how American flags are spatially distributed using street view images."
 cover:

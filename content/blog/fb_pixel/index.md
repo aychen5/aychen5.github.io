@@ -4,7 +4,7 @@ date: 2020-10-13
 tags: ["Facebook Ad Campaigns", "Meta Pixel", "Survey Distribution"]
 author: "Annie Chen"
 description: "Make the pixel work with xx" 
-summary: "This graduate course presents classical results in Romance philology. it focuses especially on Portugese and Spanish irregular verbs." 
+summary: "A guide to setting up Facebook Pixel tracking on Qualtrics surveys." 
 cover:
     image: "what-is-the-facebook-pixel-4259147330.png"
     alt: "FB Pixel"
