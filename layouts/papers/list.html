@@ -9,7 +9,7 @@
         {{ with .Date }} ({{ .Format "2006" }}){{ end }}.
         {{ with .Params.publisher }} {{ . }}.{{ end }}
         {{ with .Params.doi_id }} DOI: <a href="https://doi.org/{{ . }}">{{ . }}</a>.{{ end }}
-        {{ with .Params.external_link }} <a href="{{ . }}">link</a>{{ end }}
+        {{ if and .Params.external_link (not .Params.doi_id) }} <a href="{{ .Params.external_link }}">link</a>{{ end }}
       </li>
     {{ end }}
   </ul>

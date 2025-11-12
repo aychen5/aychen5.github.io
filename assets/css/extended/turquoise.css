@@ -1,54 +1,42 @@
-/* === Turquoise / Teal theme ===
-   Palette: #40E0D0, #008080, #085A57, #102A23
-   Light + dark aware, with accessible contrasts
+/* === Teal theme ===
+   Palette: #008080, #004D4D, #33A6A6, #B2DFDF, #FDFAEE, #1F2937
+   Light mode only
 */
 
 :root {
   /* brand palette */
-  --turquoise: #40E0D0;
-  --teal: #008080;
-  --teal-deep: #085A57;
-  --ink-deep: #102A23;
+  --teal: #008080;              /* Teal (main color) */
+  --teal-dark: #004D4D;         /* Dark Teal (for headers or navbars) */
+  --teal-light: #33A6A6;         /* Light Teal (for accents or hover states) */
+  --aqua-soft: #B2DFDF;          /* Soft Aqua (for backgrounds or highlights) */
+  --off-white: #FDFAEE;          /* Cream (neutral background) */
+  --charcoal: #1F2937;           /* Text - Charcoal Gray (neutral contrast) */
 
   /* tokens used by your site */
-  --accent: var(--turquoise);         /* primary accent */
-  --accent-2: var(--teal);            /* secondary accent */
-  --accent-3: var(--teal-deep);       /* darker hover/active */
-  --accent-ink: var(--ink-deep);      /* very dark text on light bg */
+  --accent: var(--teal-light);         /* primary accent */
+  --accent-2: var(--teal);             /* secondary accent */
+  --accent-3: var(--teal-dark);        /* darker hover/active */
+  --accent-ink: var(--charcoal);       /* very dark text on light bg */
 
   /* subtle translucents */
-  --accent-weak: rgba(64, 224, 208, 0.18);  /* #40E0D0 @ 18% */
+  --accent-weak: rgba(51, 166, 166, 0.18);  /* #33A6A6 @ 18% */
   --accent-veil: rgba(0, 128, 128, 0.12);   /* #008080 @ 12% */
 
   /* map to your existing variables */
-  --primary: var(--ink-deep);
-  --secondary: #3d5a56;   /* neutral that harmonizes with teal */
-  --tertiary: #c6e9e5;    /* soft divider in light mode */
-  --content: var(--ink-deep);
-  --border: #e6f4f2;
-  --theme: #ffffff;
-  --entry: #ffffff;
+  --primary: var(--charcoal);
+  --secondary: #4a5568;   /* neutral that harmonizes with teal */
+  --tertiary: var(--aqua-soft);    /* soft divider in light mode */
+  --content: var(--charcoal);
+  --border: var(--aqua-soft);
+  --theme: var(--off-white);
+  --entry: var(--off-white);
 
   /* link colors */
   --link: var(--teal);
-  --link-hover: var(--turquoise);
+  --link-hover: var(--teal-light);
 
   /* cards / shadows */
   --shadow-acc: 0 6px 18px var(--accent-weak);
-}
-
-.dark {
-  --theme: #0b1715;       /* dark background */
-  --entry: #10201d;       /* card/bg surface */
-  --primary: #e8fffb;     /* main text */
-  --secondary: #b7d4cf;   /* secondary text */
-  --tertiary: #1a3531;    /* dividers */
-  --content: #e8fffb;
-  --border: #1a3531;
-
-  --link: #62efe1;        /* lighter link on dark */
-  --link-hover: #40E0D0;
-  --shadow-acc: 0 8px 22px rgba(64, 224, 208, 0.22);
 }
 
 /* ===== Global link / hover accents ===== */
@@ -124,14 +112,16 @@ mark { background: var(--accent-weak); }
 
 /* Palettes (reuse your theme vars if you already set them) */
 :root {
-  --turquoise: #40E0D0;
   --teal: #008080;
-  --teal-deep: #085A57;
-  --ink-deep: #102A23;
+  --teal-dark: #004D4D;
+  --teal-light: #33A6A6;
+  --aqua-soft: #B2DFDF;
+  --off-white: #FDFAEE;
+  --charcoal: #1F2937;
 
-  --hover-bg: var(--teal-deep);     /* dark background on hover */
-  --hover-fg: #ECFFFD;              /* light text on hover */
-  --hover-ring: var(--turquoise);   /* subtle focus ring */
+  --hover-bg: var(--teal-dark);     /* dark background on hover */
+  --hover-fg: #F9FAFB;              /* light text on hover */
+  --hover-ring: var(--teal-light);  /* subtle focus ring */
 }
 
 /* Links (inline) */
@@ -180,7 +170,16 @@ a:hover,
   color: var(--hover-fg);
   border-color: var(--hover-bg);
   transform: translateY(-1px);
-  box-shadow: 0 8px 20px rgba(8,90,87,.25);
+  box-shadow: 0 8px 20px rgba(0,77,77,.25);
+}
+
+/* Override for project cards - only outline on hover */
+.project-card:hover,
+article.project-card:hover {
+  background: #FDFAEE !important;
+  background-color: #FDFAEE !important;
+  color: #1F2937 !important;
+  border-color: #004D4D !important;
 }
 /* ensure nested links remain readable on dark hover */
 .post-entry:hover a,
@@ -224,21 +223,3 @@ button:focus-visible,
   color: var(--hover-fg);
 }
 
-/* Dark mode tweaks: keep contrast strong */
-.dark a:hover,
-.dark .post-content a:hover,
-.dark .entry-header a:hover,
-.dark .footer a:hover {
-  background: var(--ink-deep);  /* #102A23 */
-  color: var(--hover-fg);
-  border-color: var(--ink-deep);
-  box-shadow: 0 0 0 2px var(--ink-deep), 0 2px 10px rgba(0,0,0,.25);
-}
-.dark .post-entry:hover,
-.dark .first-entry:hover,
-.dark .tag-entry:hover {
-  background: var(--ink-deep);
-  color: var(--hover-fg);
-  border-color: var(--ink-deep);
-  box-shadow: 0 10px 24px rgba(16,42,35,.45);
-}

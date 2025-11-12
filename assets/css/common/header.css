@@ -2,14 +2,15 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-inline-start: auto;
-    margin-inline-end: auto;
+    width: 100%;
     line-height: var(--header-height);
     background: var(--code-bg);
+    color: #F9FAFB;
 }
 
 .nav a {
     display: block;
+    color: #F9FAFB;
 }
 
 .logo,
@@ -24,7 +25,8 @@
 
 .logo a {
     font-size: var(--headersize);
-    font-weight: var(--semibold);
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .logo a img, .logo a svg {
@@ -41,14 +43,6 @@ button#theme-toggle {
     margin: auto 4px;
 }
 
-body.dark #moon {
-    vertical-align: middle;
-    display: none;
-}
-
-body:not(.dark) #sun {
-    display: none;
-}
 
 #menu {
     list-style: none;
@@ -64,10 +58,15 @@ body:not(.dark) #sun {
 #menu a {
     font-size: var(--headersize);
     font-weight: 400;
+    font-family: 'Hind', 'Open Sans', sans-serif;
 }
 
 #menu .active {
-    border-bottom: 2px solid var(--darkcolor);
+    background: var(--accent, #33A6A6);
+    border-radius: 6px;
+    padding: 4px 12px;
+    display: inline-block;
+    border-bottom: none;
 }
 
 .lang-switch li,

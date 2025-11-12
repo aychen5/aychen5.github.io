@@ -43,5 +43,11 @@
 }
 
 .button:hover {
-    background: var(--lightcolor);
+    background: #B2DFDF;
+    color: #004D4D;
+}
+
+.button:hover .button-inner,
+.button:hover a {
+    color: #004D4D;
 }

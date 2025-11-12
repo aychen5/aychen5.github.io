@@ -29,7 +29,9 @@
 
 .social-icons a {
     display: inline-flex;
-    padding: 10px 14px 10px 0px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
 }
 
 .social-icons a svg {
@@ -38,7 +40,7 @@
 }
 
 .social-icons a:hover {
-    color: var(--darkcolor);
+    color: #B2DFDF;
 }
 
 code {

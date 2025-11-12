@@ -15,7 +15,7 @@ menu:
         - name: Projects
           url: projects/
           weight: 2 
-        - name: Papers
+        - name: Publications
           url: papers/
           weight: 5
         # - name: Courses
@@ -63,7 +63,7 @@ params:
           buttons:
             - name: Projects
               url: projects/
-            - name: Papers
+            - name: Publications
               url: papers/
             # - name: Data
             #   url: data/
@@ -73,12 +73,8 @@ params:
               url: blog/
 
     socialIcons:
-        - name: CV
-          url: cv.pdf
-        - name: Email
-          url: aychen.555@gmail.com
-        - name: Location
-          url: location/
+        - name: LinkedIn
+          url: https://www.linkedin.com/in/annie-chen-0aa373b8/
         - name: Google Scholar
           url: https://scholar.google.com/citations?user=l4CPMNYAAAAJ
         - name: GitHub
@@ -87,6 +83,7 @@ params:
           url: https://x.com/annie_y_chen
 
     assets:
+        favicon: otter.ico
         disableScrollBarStyle: true
         disableHLJS : false 
     cover:

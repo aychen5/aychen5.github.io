@@ -5,7 +5,7 @@
 
 .post-title {
     margin-bottom: 20px;
-    font-size: 36px;
+    font-size: var(--h1size);
 }
 
 .post-description {
@@ -277,10 +277,6 @@
     color: var(--tertiary);
 }
 
-.dark .toc {
-    background: var(--entry);
-}
-
 .toc details summary {
     cursor: zoom-in;
     margin-inline-start: 10px;
@@ -332,7 +328,6 @@
     display: inline-block;
 }
 
-.post-tags a,
 .share-buttons,
 .paginav {
     border-radius: var(--radius);
@@ -340,16 +335,17 @@
 }
 
 .post-tags a {
-    display: block;
-    padding: 0 10px;
-    color: var(--secondary);
+    display: inline-block;
+    padding: 10px;
+    color: var(--primary, #1F2937);
     font-size: 16px;
-    line-height: 32px;
-    background: var(--code-bg);
+    border-radius: var(--radius);
+    background: var(--tertiary, #B2DFDF);
+    transition: background 0.2s ease;
 }
 
 .post-tags a:hover {
-    background: var(--lightcolor);
+    background: #B2DFDF;
 }
 
 .paginav a:hover {
