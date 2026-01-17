@@ -1,7 +1,7 @@
 ---
 title: "Setting up a Facebook Pixel on Qualtrics"
 date: 2020-10-13
-tags: ["Facebook Ad Campaigns", "Meta Pixel", "Survey Distribution"]
+tags: ["Facebook Ad Campaigns", "Facebook Pixel", "Survey Distribution", "conjoint", "Survey Experiment"]
 author: "Annie Chen"
 description: "Make the pixel work with xx" 
 summary: "A guide to setting up Facebook Pixel tracking on Qualtrics surveys." 

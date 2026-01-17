@@ -1,7 +1,7 @@
 ---
 title: "Subscriptions and external links help drive resentful users to alternative and extremist YouTube channels" 
 date: 2023-05-24
-tags: ["recsys","online information consumption", "survey", "misinformation","quasi-poisson models", "GLM"]
+tags: ["recsys", "online information consumption", "survey", "misinformation", "quasi-poisson models", "GLM"]
 author: ["Annie Chen, Brendan Nyhan, Jason Reifler, Ronald E. Robertson, and Christo Wilson"]
 description: "Analysis of the video consumption diet of YouTube users using browsing data."
 #summary: "This book discusses Portugese irregular verbs in great details."

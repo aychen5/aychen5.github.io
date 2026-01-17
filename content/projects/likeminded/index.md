@@ -1,7 +1,7 @@
 ---
 title: "Like-minded sources on Facebook are prevalent but not polarizing" 
 date: 2024-04-21
-tags: ["recsys", "field experiment", "survey", "doubly robust modeling", "online information consumption","echo chambers"]
+tags: ["recsys", "field experiment", "survey", "doubly robust modeling", "online information consumption", "echo chambers"]
 author: ["Annie Chen"]
 description: "Collaboration between Meta and academics on large-scale field experiment to evaluate echo chamber effects."
 cover:

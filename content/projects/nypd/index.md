@@ -1,7 +1,7 @@
 ---
 title: "An examination of NYPD Stop and Frisk practices using body-worn camera recordings" 
 date: 2025-04-21
-tags: ["random forest", "entropy balancing", "hierarchical clustering", "doubly robust regression", "policing","racial disparities","stop and frisk"]
+tags: ["random forest", "entropy balancing", "hierarchical clustering", "doubly robust regression", "policing", "racial disparities", "stop and frisk"]
 author: ["Annie Chen"]
 description: "Court-commissioned study on constitutional compliance and racial disparities in policing."
 cover:

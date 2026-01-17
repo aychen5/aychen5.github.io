@@ -1,7 +1,7 @@
 ---
 title: "WasteNotNYC: An Interactive Data Experience" 
 date: 2025-11-11
-tags: [ "vibe coding","maps","climate", "circular economy"]
+tags: ["maps", "climate", "data viz", "circular economy"]
 author: ["Annie Chen"]
 description: "An interactive game that aims to help New Yorkers understand waste reduction in the city."
 cover:
@@ -33,6 +33,7 @@ I was thrilled to share this project at the [NYC PIT Pop-Up](https://nycpitpopup
   <img alt="Renderer" src="https://img.shields.io/badge/Renderer-000000?logo=render&logoColor=white&style=for-the-badge">
   <img alt="Mapbox" src="https://img.shields.io/badge/Mapbox-000000?logo=mapbox&logoColor=white&style=for-the-badge">
   <img alt="Supabase" src="https://img.shields.io/badge/Supabase-3ECF8E?logo=supabase&logoColor=white&style=for-the-badge">
+  <img alt="Cursor" src="https://img.shields.io/badge/Cursor-000000?logo=cursor&logoColor=white&style=for-the-badge">
 </div>
 
 
